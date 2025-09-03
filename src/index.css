@@ -1,0 +1,17 @@
+@import url("@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Patrick+Hand&family=Snowburst+One&display=swap');");
+
+:root {
+  /* Paleta de colores cálidos */
+  --color-principal: #a56f55; /* Marrón cálido */
+  --color-secundario: #f5e4d7; /* Beige claro */
+  --color-acento: #f1a271; /* Durazno / Coral suave */
+  --color-texto: #5c3a21; /* Marrón oscuro */
+  --color-fondo: #fff4e6; /* Crema */
+  --color-hover: #f2994a; /* Naranja suave */
+}
+/* 
+.patrick-hand-regular {
+  font-family: "Patrick Hand", cursive;
+  font-weight: 400;
+  font-style: normal;
+} */
