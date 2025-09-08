@@ -1,17 +1,57 @@
-@import url("@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Patrick+Hand&family=Snowburst+One&display=swap');");
+@import url("https://fonts.googleapis.com/css2?family=Chewy&family=Patrick+Hand&family=Schoolbell&family=Snowburst+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caprasimo&display=swap");
 
-:root {
-  /* Paleta de colores cálidos */
-  --color-principal: #a56f55; /* Marrón cálido */
-  --color-secundario: #f5e4d7; /* Beige claro */
-  --color-acento: #f1a271; /* Durazno / Coral suave */
-  --color-texto: #5c3a21; /* Marrón oscuro */
-  --color-fondo: #fff4e6; /* Crema */
-  --color-hover: #f2994a; /* Naranja suave */
+* {
+  margin: 0%;
+  padding: 0;
+  box-sizing: border-box;
 }
-/* 
-.patrick-hand-regular {
+
+/* ===== Variables de colores ===== */
+:root {
+  --color-principal: #a56f55;
+  --color-secundario: #f5e4d7;
+  --color-acento: #f1a271;
+  --color-texto: #5c3a21;
+  --color-fondo: #fff4e6;
+  --color-hover: #f3a5d3;
+}
+
+/* ===== Utilidades globales ===== */
+
+/* Fondo de secciones */
+.section {
+  min-height: 100vh;
+  padding: 4rem 2rem;
+  background: var(--color-fondo);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  background: var(--color-acento);
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.8rem 1.5rem;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: var(--color-hover);
+  transform: translateY(-2px);
+}
+
+html {
+  height: 100%;
+}
+body {
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
   font-family: "Patrick Hand", cursive;
-  font-weight: 400;
-  font-style: normal;
-} */
+}

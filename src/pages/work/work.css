@@ -1,0 +1,66 @@
+.work-section {
+  padding: 2rem;
+  text-align: center;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  min-height: 100vh;
+  margin: 100px;
+}
+
+.work-title {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-principal);
+}
+
+.work-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: var(--color-texto);
+}
+
+.work-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 0 1rem;
+}
+
+.work-card {
+  background-color: var(--color-secundario);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.work-card h2 {
+  margin-bottom: 1rem;
+  color: var(--color-principal);
+  font-size: 1.5rem;
+}
+
+.work-card p {
+  color: var(--color-texto);
+  line-height: 1.4;
+}
+
+.work-card h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.8rem;
+  color: var(--color-principal);
+  font-size: 1.5rem;
+}
+
+.work-icon {
+  color: #ff89cf;
+  font-size: 1.3rem;
+}

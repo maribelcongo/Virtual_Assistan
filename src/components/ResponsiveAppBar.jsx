@@ -1,5 +1,7 @@
 // ResponsiveAppBar.jsx
+import { Link } from "react-router-dom";
 import React, { useState } from "react";
+
 import "./navbar/Appbar.css";
 
 const ResponsiveAppBar = () => {
@@ -12,17 +14,25 @@ const ResponsiveAppBar = () => {
   return (
     <header className="app-bar">
       {/* Logo */}
-      <div className="logo">
-        <img src="/logo.png" alt="Logo" />
-      </div>
+      <div className="logo"></div>
 
       {/* Botones */}
       <nav className={`nav ${menuOpen ? "open" : ""}`}>
-        <button>home</button>
-        <button>Sobre mí</button>
-        <button>Servicios</button>
-        <button>trabaja conmigo</button>
-        <button>Contacto</button>
+        <Link to="/Home">
+          <button className="Home">home</button>
+        </Link>
+        <Link to="/about">
+          <button className="About">Sobre mí</button>
+        </Link>
+        <Link to="/Services">
+          <button className="Services">mis servicios</button>
+        </Link>
+        <Link to="/Work">
+          <button className="Work">trabaja conmigo</button>
+        </Link>
+        <Link to="/Contact">
+          <button className="Contact">contacto</button>
+        </Link>
       </nav>
 
       {/* Botón de menú hamburguesa para móvil */}
