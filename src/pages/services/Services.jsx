@@ -1,180 +1,139 @@
 import React from "react";
 import "./services.css";
-import { FaCheckCircle } from "react-icons/fa"; // ícono de check
+import { FaCheckCircle } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function Services() {
+  const { t } = useTranslation();
+
   return (
     <section className="services-section">
-      <h1 className="services-title">Servicios</h1>
-      <p className="services-subtitle">
-        Estos son los servicios que ofrezco como Asistente Virtual y
-        Desarrolladora Front-End, diseñados para ayudarte a ahorrar tiempo y
-        crecer tu negocio.
-      </p>
+      <h1 className="services-title">{t("services.title")}</h1>
+      <p className="services-subtitle">{t("services.subtitle")}</p>
 
       <div className="services-grid">
-        {/* Servicio 1: Asistencia Virtual */}
+        {/* Servicio 1 */}
         <div className="service-card">
-          <h2>Asistencia Virtual</h2>
+          <h2>{t("services.virtual.title")}</h2>
           <ul className="service-list">
             <li>
               <strong>
-                <FaCheckCircle className="service-icon" /> Gestión de correos
-                electrónicos
+                <FaCheckCircle className="service-icon" />{" "}
+                {t("services.virtual.item1.title")}
               </strong>
-              <p className="service-desc">
-                Organización de bandejas de entrada, respuesta de correos
-                electrónicos, programación de citas y recordatorios.
-              </p>
+              <p className="service-desc">{t("services.virtual.item1.text")}</p>
             </li>
             <li>
               <strong>
-                <FaCheckCircle className="service-icon" /> Administración de
-                agenda
+                <FaCheckCircle className="service-icon" />{" "}
+                {t("services.virtual.item2.title")}
               </strong>
-              <p className="service-desc">
-                Gestión de horarios, programación de reuniones, coordinación de
-                viajes y reservas, y envío de recordatorios de citas.
-              </p>
+              <p className="service-desc">{t("services.virtual.item2.text")}</p>
             </li>
             <li>
               <strong>
-                <FaCheckCircle className="service-icon" /> Coordinación de
-                tareas en Trello / Notion
+                <FaCheckCircle className="service-icon" />{" "}
+                {t("services.virtual.item3.title")}
               </strong>
-              <p className="service-desc">
-                Supervisión y organización de tus proyectos para que todo fluya
-                sin contratiempos.
-              </p>
+              <p className="service-desc">{t("services.virtual.item3.text")}</p>
             </li>
             <li>
               <strong>
-                <FaCheckCircle className="service-icon" /> Investigación y
-                recopilación de datos
+                <FaCheckCircle className="service-icon" />{" "}
+                {t("services.virtual.item4.title")}
               </strong>
-              <p className="service-desc">
-                Búsqueda de información en línea, recopilación de datos y
-                elaboración de informes claros y útiles.
-              </p>
+              <p className="service-desc">{t("services.virtual.item4.text")}</p>
             </li>
             <li>
               <strong>
-                <FaCheckCircle className="service-icon" /> Atención al cliente
+                <FaCheckCircle className="service-icon" />{" "}
+                {t("services.virtual.item5.title")}
               </strong>
-              <p className="service-desc">
-                Respuesta a consultas por correo electrónico, chat en vivo o
-                teléfono, seguimiento de reclamos y resolución de problemas.
-              </p>
+              <p className="service-desc">{t("services.virtual.item5.text")}</p>
             </li>
             <li>
               <strong>
-                <FaCheckCircle className="service-icon" /> Soporte
-                administrativo
+                <FaCheckCircle className="service-icon" />{" "}
+                {t("services.virtual.item6.title")}
               </strong>
-              <p className="service-desc">
-                Creación y edición de documentos, preparación de presentaciones
-                y transcripción de archivos.
-              </p>
+              <p className="service-desc">{t("services.virtual.item6.text")}</p>
             </li>
           </ul>
         </div>
 
-        {/* Servicio 2: Gestión de Redes Sociales */}
+        {/* Servicio 2 */}
         <div className="service-card">
-          <h2>Gestión de Redes Sociales</h2>
-          <p>
-            Mantengo tu presencia online activa y profesional, aumentando la
-            conexión con tus clientes.
-          </p>
+          <h2>{t("services.social.title")}</h2>
           <ul className="service-list">
             <li>
               <strong>
-                <FaCheckCircle className="service-icon" /> Diseño y edición de
-                contenido visual
+                <FaCheckCircle className="service-icon" />{" "}
+                {t("services.social.item1.title")}
               </strong>
-              <p className="service-desc">
-                Creación de publicaciones atractivas en Canva, adaptadas a tu
-                marca.
-              </p>
+              <p className="service-desc">{t("services.social.item1.text")}</p>
             </li>
             <li>
               <strong>
-                <FaCheckCircle className="service-icon" /> Programación de
-                publicaciones
+                <FaCheckCircle className="service-icon" />{" "}
+                {t("services.social.item2.title")}
               </strong>
-              <p className="service-desc">
-                Organización de un calendario editorial y publicación automática
-                en redes.
-              </p>
+              <p className="service-desc">{t("services.social.item2.text")}</p>
             </li>
             <li>
               <strong>
-                <FaCheckCircle className="service-icon" /> Seguimiento de
-                mensajes y comunidad
+                <FaCheckCircle className="service-icon" />{" "}
+                {t("services.social.item3.title")}
               </strong>
-              <p className="service-desc">
-                Respuesta a comentarios y mensajes, fomentando la interacción
-                con tu audiencia.
-              </p>
+              <p className="service-desc">{t("services.social.item3.text")}</p>
             </li>
             <li>
               <strong>
-                <FaCheckCircle className="service-icon" /> Análisis de métricas
-                y rendimiento
+                <FaCheckCircle className="service-icon" />{" "}
+                {t("services.social.item4.title")}
               </strong>
-              <p className="service-desc">
-                Monitoreo de resultados para optimizar estrategias y mejorar
-                alcance.
-              </p>
+              <p className="service-desc">{t("services.social.item4.text")}</p>
             </li>
           </ul>
         </div>
 
-        {/* Servicio 3: Desarrollo Front-End */}
+        {/* Servicio 3 */}
         <div className="service-card">
-          <h2>Desarrollo Front-End</h2>
-          <p>
-            Creo sitios web y landing pages modernas, funcionales y adaptadas a
-            todos los dispositivos.
-          </p>
+          <h2>{t("services.frontend.title")}</h2>
           <ul className="service-list">
             <li>
               <strong>
-                <FaCheckCircle className="service-icon" /> Desarrollo con HTML,
-                CSS, JavaScript y React
+                <FaCheckCircle className="service-icon" />{" "}
+                {t("services.frontend.item1.title")}
               </strong>
               <p className="service-desc">
-                Construcción de páginas web dinámicas y atractivas visualmente.
+                {t("services.frontend.item1.text")}
               </p>
             </li>
             <li>
               <strong>
-                <FaCheckCircle className="service-icon" /> Integración con
-                Firebase y optimización de rendimiento
+                <FaCheckCircle className="service-icon" />{" "}
+                {t("services.frontend.item2.title")}
               </strong>
               <p className="service-desc">
-                Conexión con bases de datos y mejora de velocidad y eficiencia
-                del sitio.
+                {t("services.frontend.item2.text")}
               </p>
             </li>
             <li>
               <strong>
-                <FaCheckCircle className="service-icon" /> Diseño responsive y
-                moderno
+                <FaCheckCircle className="service-icon" />{" "}
+                {t("services.frontend.item3.title")}
               </strong>
               <p className="service-desc">
-                Adaptación perfecta a móviles, tablets y escritorio con estética
-                profesional.
+                {t("services.frontend.item3.text")}
               </p>
             </li>
             <li>
               <strong>
-                <FaCheckCircle className="service-icon" /> Experiencia de
-                usuario enfocada en conversión
+                <FaCheckCircle className="service-icon" />{" "}
+                {t("services.frontend.item4.title")}
               </strong>
               <p className="service-desc">
-                Estructura y navegación intuitiva para aumentar la interacción y
-                resultados.
+                {t("services.frontend.item4.text")}
               </p>
             </li>
           </ul>

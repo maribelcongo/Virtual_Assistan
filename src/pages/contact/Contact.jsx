@@ -1,23 +1,20 @@
 import React from "react";
 import "./contact.css";
 import { FaEnvelope, FaWhatsapp, FaLinkedin } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 export default function Contact() {
+  const { t } = useTranslation();
+
   return (
     <section className="contact-section">
       <div className="contact-card">
-        <h1 className="contact-name">Maribel Congo</h1>
-        <p className="contact-role">
-          Asistente Virtual & Desarrolladora Front-End
-        </p>
+        <h1 className="contact-name">{t("contact.name")}</h1>
+        <p className="contact-role">{t("contact.role")}</p>
 
-        <p className="contact-text">
-          Mi objetivo es ayudarte a optimizar tu tiempo, mejorar tu
-          productividad y aportar soluciones digitales que hagan crecer tu
-          negocio.
-        </p>
+        <p className="contact-text">{t("contact.text")}</p>
 
-        <h2 className="contact-title">Contáctame</h2>
+        <h2 className="contact-title">{t("contact.title")}</h2>
 
         <div className="contact-info">
           <div className="contact-item">
