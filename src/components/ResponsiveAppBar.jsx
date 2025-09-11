@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
-import "./navbar/Appbar.css";
+import "./navbar/AppBar.css";
 
 const ResponsiveAppBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);

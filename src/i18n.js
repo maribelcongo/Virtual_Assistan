@@ -46,7 +46,7 @@ const resources = {
             text: "Managing schedules, meetings, travel arrangements, and reminders.",
           },
           item3: {
-            title: "Task Coordination (Trello/Notion)",
+            title: "Task Coordination (Trello/Notion/Google Workspace.)",
             text: "Supervising and organizing your projects to ensure smooth workflow.",
           },
           item4: {
@@ -179,7 +179,8 @@ const resources = {
             text: "Gestión de horarios, programación de reuniones, coordinación de viajes y reservas, y envío de recordatorios de citas.",
           },
           item3: {
-            title: "Coordinación de tareas en Trello / Notion",
+            title:
+              "Coordinación de tareas en Trello / Notion / Google Workspace.",
             text: "Supervisión y organización de tus proyectos para que todo fluya sin contratiempos.",
           },
           item4: {
