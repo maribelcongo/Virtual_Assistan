@@ -82,21 +82,27 @@ header {
   color: var(--color-texto);
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .nav {
     display: none;
     flex-direction: column;
+    align-items: stretch;
     position: absolute;
-    top: 60px;
+    top: 70px;
     right: 20px;
     background-color: var(--color-principal);
     padding: 10px;
     border-radius: 8px;
+    min-width: 180px;
   }
 
   .nav.open {
     display: flex;
+  }
+
+  .nav button {
+    width: 100%;
+    margin: 5px 0;
   }
 
   .menu-toggle {
