@@ -9,7 +9,27 @@
   min-height: 100vh;
   padding: 0 1rem;
 }
-
+.subtitle {
+  margin-block: 45px;
+}
+.btn-primary {
+  color: var(--color-texto);
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: "Patrick Hand", cursive;
+  transition: background-color 0.3s, color 0.3s;
+  font-family: "Sansita", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background: var(--color-secundario);
+  text-decoration: none;
+}
+.btn-primary:hover {
+  background-color: var(--color-hover);
+}
 .home-image img {
   width: 100%;
   max-width: 400px;
@@ -23,8 +43,17 @@
 .home-text {
   max-width: 600px;
   text-align: center;
+  font-family: "Sansita", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
-
+.title_Name {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 67px;
+  color: var(--color-hover);
+  gap: 1rem;
+}
 /* -------- RESPONSIVE -------- */
 @media (max-width: 768px) {
   .home {
@@ -35,10 +64,6 @@
 
   .home-image img {
     max-width: 250px;
-  }
-
-  .title_Name {
-    font-size: 2.2rem;
   }
 
   .subtitle {

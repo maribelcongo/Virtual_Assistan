@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import foto from "../../assets/image/foto4.jpg";
+import foto from "../../assets/image/fotoMari.jpg";
 import { useTranslation } from "react-i18next";
 
 export default function About() {

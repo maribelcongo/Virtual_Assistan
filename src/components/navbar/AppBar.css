@@ -34,8 +34,13 @@ header {
   font-size: 16px;
   font-family: "Patrick Hand", cursive;
   transition: background-color 0.3s, color 0.3s;
+  font-family: "Sansita", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
-
+.nav button:hover {
+  background-color: var(--color-hover);
+}
 .language-dropdown {
   position: relative;
   margin-left: 20px;
@@ -49,7 +54,6 @@ header {
 }
 
 .lang-menu {
-  /* position: absolute; */
   top: 40px;
   left: 0;
   display: flex;
@@ -91,7 +95,7 @@ header {
     top: 70px;
     right: 20px;
     background-color: var(--color-principal);
-    padding: 10px;
+    padding: 25px;
     border-radius: 8px;
     min-width: 180px;
   }
