@@ -19,7 +19,7 @@ const ResponsiveAppBar = () => {
     <header className="app-bar">
       {/* Logo */}
       <div className="logo">
-        <h2>MiPortafolio</h2>
+        <h2>Mi Portafolio</h2>
       </div>
 
       {/* Navegación */}

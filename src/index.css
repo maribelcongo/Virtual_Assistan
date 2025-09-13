@@ -8,12 +8,12 @@
 
 /* ===== Variables de colores ===== */
 :root {
-  --color-principal: #a56f55;
+  --color-principal: #f5cbb6;
   --color-secundario: #f5e4d7;
   --color-acento: #f1a271;
   --color-texto: #211309;
-  --color-fondo: #ddb5a6;
-  --color-hover: #f772bf;
+  --color-fondo: #ad6a51;
+  --color-hover: #f5b2d9;
 }
 
 /* ===== Utilidades globales ===== */
@@ -55,14 +55,13 @@ body {
   font-family: "Patrick Hand", cursive;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1 {
   font-family: "Agbalumo", system-ui;
   color: var(--color-principal);
   font-size: 2rem;
   font-weight: normal;
+}
+
+h2 {
+  color: #211309;
 }
