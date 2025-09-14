@@ -54,23 +54,7 @@
   color: var(--color-hover);
   gap: 1rem;
 }
-/* /* -------- RESPONSIVE --------  
-@media (max-width: 768px) {
-  .home {
-    flex-direction: column;
-    gap: 2rem;
-    text-align: center;
-  }
-
-  .home-image img {
-    max-width: 250px;
-  }
-
-  .subtitle {
-    font-size: 1rem;
-    margin-block: 30px;
-  }
-} */
+/* /* -------- RESPONSIVE --------   */
 
 @media (max-width: 768px) {
   .home {
@@ -88,9 +72,5 @@
   .subtitle {
     font-size: 1rem;
     margin-block: 30px;
-  }
-
-  .title_Name {
-    font-size: 40px;
   }
 }

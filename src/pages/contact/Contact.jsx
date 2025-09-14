@@ -3,12 +3,13 @@ import "./contact.css";
 import { FaEnvelope, FaWhatsapp, FaLinkedin } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 import oficina from "../../assets/image/img_oficina.jpg";
+import ScrollArrow from "../../components/ScrollArrow";
 
 export default function Contact() {
   const { t } = useTranslation();
 
   return (
-    <section className="contact-section">
+    <section id="Contact" className="contact-section">
       <div className="contact-card">
         {/* Columna izquierda (Imagen) */}
         <div className="contact-image">
@@ -50,6 +51,9 @@ export default function Contact() {
           </form>
         </div>
       </div>
+
+      {/* Flecha que lleva al inicio */}
+      <ScrollArrow targetPath="/" />
     </section>
   );
 }

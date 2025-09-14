@@ -6,13 +6,14 @@
 }
 
 /* ===== Variables de colores ===== */
+
 :root {
   --color-principal: #f5cbb6;
-  --color-secundario: #f5e4d7;
+  --color-secundario: #fff0e5;
   --color-acento: #f1a271;
   --color-texto: #211309;
   --color-fondo: #ad6a51;
-  --color-hover: #f5b2d9;
+  --color-hover: #ff89cf;
 }
 
 /* ===== Utilidades globales ===== */
@@ -65,4 +66,57 @@ h2 {
   color: #211309;
   font-family: "Titan One", sans-serif;
   font-weight: 200;
+}
+/* ------------------------- CSS  flechas------------------------- */
+/* Flechas de navegación entre secciones */
+/* Contenedor de la flecha */
+.scroll-down {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+/* Botón que contiene el icono */
+.scroll-down-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Icono dentro del botón */
+.scroll-down-button svg {
+  color: var(--color-hover);
+  font-size: 2.5rem;
+  transition: transform 0.3s;
+  animation: bounce 2s infinite;
+}
+
+/* Hover para efecto de desplazamiento */
+.scroll-down-button:hover svg {
+  transform: translateY(5px);
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-8px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+}
+
+/* Ajuste en móviles */
+@media (max-width: 768px) {
+  .scroll-down-button svg {
+    font-size: 3rem;
+  }
 }

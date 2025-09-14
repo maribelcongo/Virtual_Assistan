@@ -2,12 +2,13 @@ import React from "react";
 import "./about.css";
 import foto from "../../assets/image/fotoMari.jpg";
 import { useTranslation } from "react-i18next";
+import ScrollArrow from "../../components/ScrollArrow";
 
 export default function About() {
   const { t } = useTranslation();
 
   return (
-    <section className="Section_About">
+    <section id="About" className="Section_About">
       <div className="About-image">
         <img src={foto} alt="Foto perfil" className="img_About" />
       </div>
@@ -16,6 +17,7 @@ export default function About() {
         <p>{t("about.text1")}</p>
         <p>{t("about.text2")}</p>
       </div>
+      <ScrollArrow targetPath="/services" />
     </section>
   );
 }

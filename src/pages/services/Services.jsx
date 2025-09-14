@@ -2,12 +2,12 @@ import React from "react";
 import "./services.css";
 import { FaCheckCircle } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
-
+import ScrollArrow from "../../components/ScrollArrow";
 export default function Services() {
   const { t } = useTranslation();
 
   return (
-    <section className="services-section">
+    <section id="Services" className="services-section">
       <h1 className="services-title">{t("services.title")}</h1>
       <p className="services-subtitle">{t("services.subtitle")}</p>
 
@@ -139,6 +139,7 @@ export default function Services() {
           </ul>
         </div>
       </div>
+      <ScrollArrow targetPath="/work" />
     </section>
   );
 }

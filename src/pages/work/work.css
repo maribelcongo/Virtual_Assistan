@@ -68,3 +68,9 @@
   color: #ff89cf;
   font-size: 1.3rem;
 }
+@media (max-width: 768px) {
+  .work-grid {
+    width: 90%;
+    padding: 0;
+  }
+}

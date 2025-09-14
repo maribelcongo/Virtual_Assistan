@@ -5,40 +5,41 @@ import "./navbar/AppBar.css";
 
 const ResponsiveAppBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [langOpen, setLangOpen] = useState(false); // estado para el mini menú de idiomas
+  const [langOpen, setLangOpen] = useState(false);
   const { t, i18n } = useTranslation();
 
   const toggleMenu = () => setMenuOpen(!menuOpen);
   const toggleLangMenu = () => setLangOpen(!langOpen);
-  const changeLanguage = (lang) => {
-    i18n.changeLanguage(lang);
-    setLangOpen(false); // cierra el mini menú al seleccionar
+
+  // 👇 Función que cierra menú y opcionalmente cambia idioma
+  const handleClick = (lang = null) => {
+    setMenuOpen(false); // cierra menú
+    setLangOpen(false); // cierra mini menú de idiomas
+    if (lang) i18n.changeLanguage(lang);
   };
+
+  // Array de links para mapear y evitar repetir código
+  const navLinks = [
+    { path: "/Home", label: t("navbar.home") },
+    { path: "/About", label: t("navbar.about") },
+    { path: "/Services", label: t("navbar.services") },
+    { path: "/Work", label: t("navbar.work") },
+    { path: "/Contact", label: t("navbar.contact") },
+  ];
 
   return (
     <header className="app-bar">
-      {/* Logo */}
       <div className="logo">
         <h2>Mi Portafolio</h2>
       </div>
 
       {/* Navegación */}
       <nav className={`nav ${menuOpen ? "open" : ""}`}>
-        <Link to="/Home">
-          <button>{t("navbar.home")}</button>
-        </Link>
-        <Link to="/About">
-          <button>{t("navbar.about")}</button>
-        </Link>
-        <Link to="/Services">
-          <button>{t("navbar.services")}</button>
-        </Link>
-        <Link to="/Work">
-          <button>{t("navbar.work")}</button>
-        </Link>
-        <Link to="/Contact">
-          <button>{t("navbar.contact")}</button>
-        </Link>
+        {navLinks.map((link) => (
+          <Link key={link.path} to={link.path}>
+            <button onClick={() => handleClick()}>{link.label}</button>
+          </Link>
+        ))}
 
         {/* Mini menú de idiomas */}
         <div className="language-dropdown">
@@ -47,8 +48,8 @@ const ResponsiveAppBar = () => {
           </button>
           {langOpen && (
             <div className="lang-menu">
-              <button onClick={() => changeLanguage("es")}>🇪🇸</button>
-              <button onClick={() => changeLanguage("en")}>🇺🇸</button>
+              <button onClick={() => handleClick("es")}>🇪🇸</button>
+              <button onClick={() => handleClick("en")}>🇺🇸</button>
             </div>
           )}
         </div>

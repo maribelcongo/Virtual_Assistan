@@ -77,9 +77,24 @@
   display: flex;
   align-items: center;
   gap: 0.5rem;
+  font-family: "Sansita", sans-serif;
 }
 
 .service-icon {
   color: #ff89cf;
   font-size: 1.2rem;
+}
+@media (max-width: 768px) {
+  .services-grid {
+    width: 90%;
+    padding: 0;
+  }
+
+  .services-subtitle {
+    font-size: 1rem;
+  }
+
+  .service-card {
+    padding: 1rem;
+  }
 }
