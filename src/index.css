@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&family=Titan+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Niconne&display=swap");
+
 * {
   margin: 0%;
   padding: 0;
@@ -12,8 +14,17 @@
   --color-secundario: #fff0e5;
   --color-acento: #f1a271;
   --color-texto: #211309;
-  --color-fondo: #ad6a51;
-  --color-hover: #ff89cf;
+
+  --color-fondo: linear-gradient(
+    135deg,
+    #f2e1d9,
+    #e3c5b3,
+    #c79f88,
+    #a6745d,
+    #704a38
+  );
+
+  --color-hover: #912b48;
 }
 
 /* ===== Utilidades globales ===== */
@@ -56,10 +67,11 @@ body {
 }
 
 h1 {
-  font-family: "Agbalumo", system-ui;
+  /* font-family: "Agbalumo", system-ui; */
   color: var(--color-principal);
-  font-size: 2rem;
+  font-size: 80px;
   font-weight: normal;
+  font-family: "Niconne", cursive;
 }
 
 h2 {
@@ -68,7 +80,7 @@ h2 {
   font-weight: 200;
 }
 /* ------------------------- CSS  flechas------------------------- */
-/* Flechas de navegación entre secciones */
+
 /* Contenedor de la flecha */
 .scroll-down {
   display: flex;

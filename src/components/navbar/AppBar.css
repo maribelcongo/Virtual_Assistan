@@ -1,9 +1,9 @@
 .app-bar {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   padding: 10px 20px;
-
+  background: #d8b9ab;
   color: var(--color-texto);
   position: fixed;
   top: 0;
@@ -40,6 +40,7 @@ header {
 }
 .nav button:hover {
   background-color: var(--color-hover);
+  color: var(--color-secundario);
 }
 .language-dropdown {
   position: relative;

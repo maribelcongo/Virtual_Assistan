@@ -1,6 +1,6 @@
 import React from "react";
 import "./about.css";
-import foto from "../../assets/image/fotoMari.jpg";
+import foto from "../../assets/image/fotoPorfolio.jpg";
 import { useTranslation } from "react-i18next";
 import ScrollArrow from "../../components/ScrollArrow";
 

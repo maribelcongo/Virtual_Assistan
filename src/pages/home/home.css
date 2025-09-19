@@ -29,6 +29,7 @@
 }
 .btn-primary:hover {
   background-color: var(--color-hover);
+  color: var(--color-secundario);
 }
 .home-image img {
   width: 100%;
@@ -48,9 +49,9 @@
   font-style: normal;
 }
 .title_Name {
-  font-weight: 700;
+  font-weight: 800;
   font-style: normal;
-  font-size: 67px;
+  font-size: 87px;
   color: var(--color-hover);
   gap: 1rem;
 }

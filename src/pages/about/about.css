@@ -6,6 +6,7 @@
   align-items: center;
   margin-top: 100px;
   padding: 70px 20px;
+  background: var(--color-fondo);
 }
 
 .About-image {
@@ -41,7 +42,7 @@
 .Title_About {
   font-weight: 700;
   font-style: normal;
-  font-size: 67px;
+  font-size: 87px;
   color: var(--color-hover);
   gap: 1rem;
 }

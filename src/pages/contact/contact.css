@@ -1,7 +1,7 @@
 .contact-section {
   display: flex;
   min-height: 100vh;
-  background-color: var(--color-fondo);
+  background: var(--color-fondo);
   padding: 2rem;
   margin-top: 60px;
   justify-content: center;
@@ -79,6 +79,7 @@
 .contact-btn:hover {
   background: var(--color-hover);
   transform: translateY(-2px);
+  color: var(--color-secundario);
 }
 
 @media (max-width: 768px) {

@@ -1,7 +1,7 @@
 .work-section {
   padding: 2rem;
   text-align: center;
-  background-color: var(--color-fondo);
+  background: var(--color-fondo);
   color: var(--color-texto);
   min-height: 100vh;
   margin-top: 100px;
@@ -10,7 +10,7 @@
 .work-title {
   font-weight: 700;
   font-style: normal;
-  font-size: 67px;
+  font-size: 87px;
   color: var(--color-hover);
   margin-block: 1rem;
 }

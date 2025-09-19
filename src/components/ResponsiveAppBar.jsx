@@ -29,10 +29,6 @@ const ResponsiveAppBar = () => {
 
   return (
     <header className="app-bar">
-      <div className="logo">
-        <h2>Mi Portafolio</h2>
-      </div>
-
       {/* Navegación */}
       <nav className={`nav ${menuOpen ? "open" : ""}`}>
         {navLinks.map((link) => (
