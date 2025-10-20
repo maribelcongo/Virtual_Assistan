@@ -75,3 +75,22 @@
     margin-block: 30px;
   }
 }
+.cv-btn-fixed {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #111;
+  color: #fff;
+  padding: 10px 18px;
+  border-radius: 12px;
+  font-weight: 500;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  z-index: 1000;
+}
+
+.cv-btn-fixed:hover {
+  background-color: #444;
+  transform: translateY(-2px);
+}

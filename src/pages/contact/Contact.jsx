@@ -48,6 +48,9 @@ export default function Contact() {
             >
               <FaLinkedin /> LinkedIn
             </a>
+            <a href="/maribel congo V_A.pdf" download className="contact-btn">
+              📄 Descargar CV
+            </a>
           </form>
         </div>
       </div>

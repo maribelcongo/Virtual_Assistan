@@ -24,6 +24,7 @@ const ResponsiveAppBar = () => {
     { path: "/About", label: t("navbar.about") },
     { path: "/Services", label: t("navbar.services") },
     { path: "/Work", label: t("navbar.work") },
+    { path: "/projects", label: t("navbar.projects") },
     { path: "/Contact", label: t("navbar.contact") },
   ];
 

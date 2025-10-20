@@ -11,6 +11,7 @@ const resources = {
         services: "Services",
         work: "Work with Me",
         contact: "Contact",
+        projects: "Projects",
       },
 
       /* Home */
@@ -125,6 +126,16 @@ const resources = {
         },
       },
 
+      projects: {
+        title: "My Projects",
+        dailyPlanner: {
+          name: "Daily Planner Web App",
+          description:
+            "A task planner app I developed myself to streamline my workflow as a Virtual Assistant. It helps me organize tasks efficiently, prioritize work, and achieve better results for my clients.",
+          button: "View Project",
+        },
+      },
+
       /* Contact */
       contact: {
         name: "Maribel Congo",
@@ -143,6 +154,7 @@ const resources = {
         about: "Sobre mí",
         services: "Mis servicios",
         work: "Trabaja conmigo",
+        projects: "Proyectos",
         contact: "Contacto",
       },
 
@@ -256,6 +268,16 @@ const resources = {
         card4: {
           title: "Compromiso",
           text: "Me involucro en tu proyecto como si fuera mío, buscando siempre los mejores resultados.",
+        },
+      },
+      /* Projects */
+      projects: {
+        title: "Mis Proyectos",
+        dailyPlanner: {
+          name: "Daily Planner Web App",
+          description:
+            "Una aplicación de planificación de tareas que desarrollé para optimizar mi flujo de trabajo como Asistente Virtual. Me permite organizar mis tareas de manera eficiente, priorizar el trabajo y obtener mejores resultados para mis clientes.",
+          button: "Ver Proyecto",
         },
       },
 
