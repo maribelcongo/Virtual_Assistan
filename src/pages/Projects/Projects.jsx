@@ -2,7 +2,7 @@ import React from "react";
 import { useTranslation } from "react-i18next";
 import dailyPlannerImage from "../../assets/image/planificador.png";
 import ScrollArrow from "../../components/ScrollArrow";
-import "./Projects.css";
+import "./projects.css";
 
 export default function Projects() {
   const { t } = useTranslation();
